@@ -1,0 +1,32 @@
+﻿<Window x:Class="P20260311_2.menuablak"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P20260311_2"
+        mc:Ignorable="d"
+        Title="Autókereskedés" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Column="1" Grid.Row="1" Height="20" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Betöltés"/>
+                <MenuItem Header="Mentés"/>
+                <MenuItem Header="Kilépés" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Statisztika">
+                <MenuItem Header="Beolvasás"/>
+                <MenuItem Header="Új autó"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
