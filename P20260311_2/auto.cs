@@ -15,15 +15,17 @@ namespace P20260311_2
         int ar;
         int evjarat;
         string szin;
+        Boolean torott;
 
-        public auto(int id, string marka, string tipus, int ar, int evjarat, string szin)
+        public auto(int id, string marka, string tipus, int ar, int evjarat, string szin, bool torott)
         {
-            Id1 = id;
+            this.Id = id;
             this.Marka = marka;
             this.Tipus = tipus;
             this.Ar = ar;
             this.Evjarat = evjarat;
             this.Szin = szin;
+            this.torott = torott;
         }
 
         public int Id1 { get => Id; set => Id = value; }
@@ -32,6 +34,7 @@ namespace P20260311_2
         public int Ar { get => ar; set => ar = value; }
         public int Evjarat { get => evjarat; set => evjarat = value; }
         public string Szin { get => szin; set => szin = value; }
+        public bool Torott { get => torott; set => torott = value; }
 
         /*public static List<auto> feltolt(string fnev)
         {
