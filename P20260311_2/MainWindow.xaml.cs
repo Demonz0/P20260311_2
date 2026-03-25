@@ -21,15 +21,16 @@ namespace P20260311_2
             InitializeComponent();
         }
 
-        private void belepes_Click(object sender, RoutedEventArgs e, menuablak menuablak)
-        {
-            menuablak mablak = new menuablak();
-            menuablak.Show();
-        }
 
         private void kilepes_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void belepes_Click_1(object sender, RoutedEventArgs e, menuablak menuablak)
+        {
+            menuablak mablak = new menuablak();
+            menuablak.Show();
         }
     }
 }

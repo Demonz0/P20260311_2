@@ -28,5 +28,11 @@ namespace P20260311_2
         {
             Close();
         }
+
+        private void Uj_auto(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

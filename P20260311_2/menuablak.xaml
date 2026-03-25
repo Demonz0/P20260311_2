@@ -19,13 +19,15 @@
         </Grid.RowDefinitions>
         <Menu Grid.Column="1" Grid.Row="1" Height="20" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top">
             <MenuItem Header="File">
-                <MenuItem Header="Betöltés"/>
-                <MenuItem Header="Mentés"/>
+                <MenuItem Header="Adatok beolvasása"/>
+                <MenuItem Header="Adatok mentése"/>
                 <MenuItem Header="Kilépés" Click="MenuItem_Click"/>
             </MenuItem>
-            <MenuItem Header="Statisztika">
-                <MenuItem Header="Beolvasás"/>
-                <MenuItem Header="Új autó"/>
+            <MenuItem Header="Autók">
+                <MenuItem Header="Új autó rögzítése" Click="Uj_auto"/>
+            </MenuItem>
+            <MenuItem Header="Lekérdezések">
+                <MenuItem Header="A telephely összes autója"/>
             </MenuItem>
         </Menu>
     </Grid>
